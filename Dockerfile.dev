@@ -1,0 +1,12 @@
+FROM node:carbon
+
+WORKDIR /usr/src/app
+
+COPY package.json .
+RUN npm install
+
+# With docker compose this command is not needed.
+# But still it can be used if we get back to docker or specific production env
+COPY . .
+
+CMD ["npm", "run", "start"]
