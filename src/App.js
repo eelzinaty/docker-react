@@ -13,7 +13,7 @@ class App extends Component {
         <p className="App-intro">
           Hi there - By there!
           <br/>
-          Changed - 5!
+          Changed - HD-1!
         </p>
       </div>
     );
